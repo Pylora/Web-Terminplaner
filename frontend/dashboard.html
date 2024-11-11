@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Deine Termine</h2>
+    <ul>
+        {% for event in events %}
+        <li>{{ event.title }} - {{ event.date.strftime('%d.%m.%Y') }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/add_event">Neuen Termin hinzufügen</a>
+    <a href="/logout">Logout</a>
+</body>
+</html>

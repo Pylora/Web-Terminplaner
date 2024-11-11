@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neuer Termin</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Neuen Termin hinzufügen</h2>
+    <form method="POST" action="/add_event">
+        <label>Titel:</label><br>
+        <input type="text" name="title" required><br>
+        <label>Beschreibung:</label><br>
+        <textarea name="description"></textarea><br>
+        <label>Datum:</label><br>
+        <input type="date" name="date" required><br>
+        <button type="submit">Speichern</button>
+    </form>
+</body>
+</html>
